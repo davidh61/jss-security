@@ -1,6 +1,7 @@
 module.exports = {
   siteName: 'Gridsome',
-
+  siteUrl: 'https://davidh61.github.io',
+  pathPrefix: '/jss-security',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
