@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'JSS Security',
   siteUrl: 'https://davidh61.github.io',
   pathPrefix: '/jss-security',
   plugins: [
