@@ -5,13 +5,10 @@
       "link": "/"
     },
     {
-      "name": "About",
-      "link": "/about"
+      "name": "Who We Are",
+      "link": "/who-we-are"
     },
-    {
-      "name": "Blog",
-      "link": "/blog"
-    },
+
     {
       "name": "Contact",
       "link": "/contact"

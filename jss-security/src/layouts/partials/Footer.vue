@@ -39,7 +39,7 @@
 export default {
   methods: {
     socialIcon(element) {
-      return `/icons.svg#icon-${element.icon}`
+      return `icons.svg#icon-${element.icon}`
     }
   }
 }
