@@ -6,6 +6,7 @@
 
       <HeaderPartial/>
 
+      <Banner/>
 
       <main id="main" class="main inner flex flex-1 flex-col py-10 lg:py-20">
         <slot/>
@@ -34,12 +35,14 @@ query {
 import HeaderPartial from '~/layouts/partials/Header.vue'
 import FooterPartial from '~/layouts/partials/Footer.vue'
 import ResponsiveNav from '~/layouts/partials/ResponsiveNav.vue'
+import Banner from '~/components/home/Banner.vue'
 
 export default {
   components: {
     HeaderPartial,
     FooterPartial,
-    ResponsiveNav
+    ResponsiveNav,
+    Banner
   }
 }
 </script>

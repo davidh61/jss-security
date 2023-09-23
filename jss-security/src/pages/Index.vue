@@ -1,42 +1,51 @@
 <template>
   <Layout>
     <section id="container-centre" class="column centre flex-1">
-      <h1 class="page-title">JSS Security Systems Ltd</h1>
-      <div class="content">
-        <p>
-          Installers of Fire & Security Systems for Domestic & Commercial Premises
-        </p>
-        <section class="grid md:grid-cols-2 pb-10 container">
-          <div>
-            <span class="text-2xl">At JSS, we understand that the safety of your home or business is your top priority. That's why we offer a wide range of fire and security systems that are designed to protect you and your property from fire, theft, and other threats.</span>
-          </div>
-          <g-image src="~/assets/images/cctv.jpg" width="500" />
-        </section>
-        <div class="grid md:grid-cols-2">
-          <div class="md:order-2">
-            <h2 class="text-2xl">Our fire and security systems include:</h2>
-            <ul class="mb-12 list-disc pl-4 text-base">
-              <li>Fire alarms: These systems detect fire early on and sound an alarm to alert you and your family to evacuate.</li>
-              <li>Fire extinguishers: These devices can be used to put out small fires before they get out of control.</li>
-              <li>Intruder alarms: These systems detect unauthorized entry into your home or business and sound an alarm to scare away intruders.</li>
-              <li>CCTV cameras: These cameras can be used to monitor your property and deter crime.</li>
-              <li>Access control systems: These systems control who can enter your property, providing an extra layer of security.</li>
-            </ul>
-          </div>
-          <g-image src="~/assets/images/cctv.jpg" width="500" class="md:order-1" />
+      <div class="grid md:grid-cols-3 gap-3.5 pb-11 container items-center">
+        <div class="md:col-span-2">
+          <span class="text-xl"
+            >At JSS, we understand that the safety of your home or business is
+            your top priority. That's why we offer a wide range of fire and
+            security systems that are designed to protect you and your property
+            from fire, theft, and other threats.</span
+          >
         </div>
-        <div class="content-center">
+        <g-image src="~/assets/images/cctv.jpg" width="500" />
+      </div>
 
+      <!-- <FiftyFifty text="At JSS, we understand that the safety of your home or business is your
+        top priority. That's why we offer a wide range of fire and security
+        systems that are designed to protect you and your property from fire,
+        theft, and other threats."
+        imageFile="~/assets/images/work.jpg"/> -->
+
+      <div class="grid md:grid-cols-3 gap-3.5 pb-11 container items-center">
+        <div class="md:order-last md:col-span-2">
+          <span class="text-xl"
+            >We are a two-person company that specializes in the installation
+            and maintenance of fire and security systems for homes and
+            businesses. We are committed to providing our customers with the
+            highest quality service and products, and we are always available to
+            answer your questions and address your concerns.</span
+          >
         </div>
+        <g-image src="~/assets/images/work.jpg" width="500" />
       </div>
     </section>
   </Layout>
 </template>
 
 <script>
+// import ContactCta from '~/components/home/Banner.vue'
+import FiftyFifty from "~/components/FiftyFifty.vue";
+
 export default {
   metaInfo: {
     title: "Home",
+  },
+  components: {
+    // Banner
+    FiftyFifty,
   },
 };
 </script>
