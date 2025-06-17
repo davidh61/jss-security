@@ -15,11 +15,13 @@ export default function Menu({ isMenuOpen, toggleMenu }: MenuProps) {
       <div className="container mx-auto flex items-center justify-between">
 
         <div className="text-xl font-bold pl-4 md:pl-0">
+            <a href="/" className="hover:text-gray-300">
             <Image
                 src={Logo}
                 alt="Logo"
                 height={50}  
             />
+            </a>
         </div>
 
         <button
