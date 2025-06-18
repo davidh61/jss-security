@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { Instagram, Cctv, BrickWallFire, Siren } from 'lucide-react';
-import ServiceCard from '../../components/ServiceCard';
+import ServiceCard from '../components/ServiceCard';
 
-export default function ServicesPage() {
+export default function Services() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 py-12">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 py-12" id="services">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Our Services</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

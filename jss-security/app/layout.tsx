@@ -22,10 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en"
+    className="scroll-smooth"
+    data-google-analytics-opt-out="">
       <body className={`${comme.variable} antialiased flex flex-col min-h-screen`}>
         <MenuWrapper />
-        <main className="flex-grow">
+        <main>
           {children}
         </main>
         <Footer />
