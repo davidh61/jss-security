@@ -6,6 +6,7 @@ runs:
     - name: Setup Node.js ⚙️
       uses: actions/setup-node@v4
       with:
+        cache-dependency-path: jss-security/package-lock.json
         node-version: 20
 
     - name: Cache dependencies ⚡
