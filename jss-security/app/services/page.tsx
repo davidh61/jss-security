@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Instagram, Cctv, BrickWallFire, Siren } from 'lucide-react';
+import { Cctv, BrickWallFire, Siren } from 'lucide-react';
 import ServiceCard from '../../components/ServiceCard';
 
 export default function ServicesPage() {

@@ -9,19 +9,19 @@ interface MenuProps {
   toggleMenu: () => void;
 }
 
-export default function Menu({ isMenuOpen, toggleMenu }: MenuProps) {
+export default function Menu({ toggleMenu }: MenuProps) {
   return (
     <header className="text-white py-4 bg-blue-950">
       <div className="container mx-auto flex items-center justify-between">
 
         <div className="text-xl font-bold pl-4 md:pl-0">
-            <a href="/" className="hover:text-gray-300">
-            <Image
-                src={Logo}
-                alt="Logo"
-                height={50}  
-            />
-            </a>
+            <Link href="/" className="hover:text-gray-300">
+              <Image
+                  src={Logo}
+                  alt="Logo"
+                  height={50}  
+              />
+            </Link>
         </div>
 
         <button

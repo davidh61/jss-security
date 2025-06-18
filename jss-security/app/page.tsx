@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import Image from "next/image";
 import Services from "@/components/Services";
 import { ArrowDown } from 'lucide-react';
 

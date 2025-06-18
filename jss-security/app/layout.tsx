@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Comme } from "next/font/google";
 import "./globals.css";
 import MenuWrapper from "../components/MenuWrapper";
-import { use } from "react";
 import Footer from "../components/Footer";  
 
 

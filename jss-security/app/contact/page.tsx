@@ -1,5 +1,3 @@
-import ContactForm from '../../components/ContactForm';
-
 export default function ContactPage() {
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -7,7 +5,7 @@ export default function ContactPage() {
         <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
 
         <p className="text-lg text-gray-300 mb-8 text-center">
-          We're eager to hear from you! Whether you have questions about our services, need a custom security solution, or just want to learn more, please don't hesitate to reach out. Our team is ready to assist you with any inquiries.
+          We&apos;re eager to hear from you! Whether you have questions about our services, need a custom security solution, or just want to learn more, please don&apos;t hesitate to reach out. Our team is ready to assist you with any inquiries.
         </p>
 
         <div className="flex flex-col md:flex-row justify-center items-center mb-8 gap-4">

@@ -29,8 +29,12 @@ export default function ContactForm() {
       } else {
         setStatus(`Email sending failed: ${response.statusText}`);
       }
-    } catch (error: any) {
-      setStatus(`Email sending failed: ${error.message}`);
+    } catch (error) {
+      let errorMessage = 'An unknown error occurred.';
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
+      setStatus(`Email sending failed: ${errorMessage}`);
     }
   };
 
