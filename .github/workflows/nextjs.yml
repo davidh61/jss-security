@@ -42,14 +42,10 @@ jobs:
       - name: Build with Next.js 🏗️
         run: npx next build
 
-      - name: LS debugging
-        run: cd github-pages && \
-             ls -la
-
-      - name: Upload artifact 📡
-        uses: actions/upload-pages-artifact@v3
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
         with:
-          path: github-pages
+          path:  github-pages
 
   deploy:
     environment:
