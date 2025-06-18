@@ -17,7 +17,7 @@ jobs:
   build:
     defaults:
       run:
-        working-directory: /jss-security
+        working-directory: jss-security
     runs-on: ubuntu-latest
 
     steps:
@@ -45,7 +45,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ github.workspace }}/github-pages
+          path: ${{ github.path }}/github-pages
 
   deploy:
     environment:
