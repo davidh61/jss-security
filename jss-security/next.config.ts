@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
     output: "export", 
     distDir: "github-pages",
     basePath: '/jss-security',
-
+    assetPrefix: '/jss-security',
 };
 
 export default nextConfig;
