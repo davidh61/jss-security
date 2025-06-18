@@ -76,10 +76,15 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Output
         run: ls -la
+      - name: List files in out directory (for debugging)
+        run: ls -la out 
+      - name: Archive static site
+        run: tar -czf static-site.tar.gz out 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: out
+          path: out
+          name: static-site
 
   # Deployment job
   deploy:
