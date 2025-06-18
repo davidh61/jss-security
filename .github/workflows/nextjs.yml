@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Setup Pages ⚙️
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
         with:
           static_site_generator: next
 
@@ -48,11 +48,9 @@ jobs:
           ls -l
 
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          include-hidden-files: true
-          if-no-files-found: error
-          path: /jss-security/github-pages
+          path: ./github-pages
 
   deploy:
     environment:
