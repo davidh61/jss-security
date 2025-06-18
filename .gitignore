@@ -1,6 +1,37 @@
+# Node.js
+node_modules/
+dist/
+.next/
+
+# Yarn
+yarn-error.log*
+
+# VS Code
+.vscode/
+*.suo
+*.njsproj
+*.sln
+*.sw*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.development.local
+.env.production
+.env.production.local
+
+# Logs
 *.log
-.DS_Store
-node_modules
-coverage
-dist
-pnp-e2e
+*.DS_Store
+
+# Netlify
+.netlify/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS generated files
+Thumbs.db
