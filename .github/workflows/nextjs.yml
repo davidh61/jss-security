@@ -33,8 +33,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Detect package manager
         id: detect-package-manager
+        working-directory: jss-security
         run: |
-          if [ -f "${{ github.workspace }}/jss-security/package.json" ]; then
+          if [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
