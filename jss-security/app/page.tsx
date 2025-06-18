@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex items-center justify-center"> {/* Added min-h-screen, flex, items-center, justify-center */}
-      <div className="container mx-auto py-12 px-4 pt-50">
-        <h1 className="text-3xl font-bold mb-6 text-center">JSS Security Systems LTD</h1>
+      <div className="container mx-auto py-12 px-4 pt-60">
+        <h1 className="neon-text text-5xl font-bold mb-6 text-center shadow-md">JSS Security Systems LTD</h1>
 
         <p className="text-lg mb-8 text-center text-gray-300">
           Installers of Fire & Security Systems for Domestic & Commercial Premises
