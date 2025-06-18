@@ -1,8 +1,8 @@
-name: publish-to-github-pages
+name: Build and Publish to GH Pages
 on:
   push:
     branches:
-      - next
+      - main
 
 permissions:
   contents: read
@@ -24,15 +24,14 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node ⚙️
         uses: actions/setup-node@v4      
-
         with:
           cache: npm
           cache-dependency-path: jss-security/package-lock.json
           node-version: "20"
 
-      - name: Restore cache
+      - name: Restore cache ⚡
         uses: actions/cache@v4
         with:
           path: |
@@ -53,7 +52,7 @@ jobs:
       - name: Build with Next.js 🏗️
         run: npx next build
 
-      - name: Upload artifact
+      - name: Upload artifact 📦
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
