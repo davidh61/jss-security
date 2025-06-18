@@ -1,7 +1,9 @@
 # Node.js
 node_modules/
 dist/
-.next/
+.next/*
+github-pages/
+
 
 # Yarn
 yarn-error.log*
