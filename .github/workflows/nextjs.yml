@@ -45,7 +45,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ github.path }}/github-pages
+          path: /home/runner/work/jss-security/github-pages
 
   deploy:
     environment:
