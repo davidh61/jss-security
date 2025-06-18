@@ -1,6 +1,6 @@
 import ServicesComponent from "@/components/Services";
 import ContactComponent from "@/components/Contact";
-import { ArrowDown, Contact } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 export default function Home() {
   return (
