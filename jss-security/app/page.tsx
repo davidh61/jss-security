@@ -1,10 +1,11 @@
-import Services from "@/components/Services";
-import { ArrowDown } from 'lucide-react';
+import ServicesComponent from "@/components/Services";
+import ContactComponent from "@/components/Contact";
+import { ArrowDown, Contact } from 'lucide-react';
 
 export default function Home() {
   return (
     <div> {/* Changed to a simple div to contain both sections */}
-      <div className="flex items-center justify-center  min-h-screen bg-gradient-to-t from-blue-500 to-blue-950">
+      <div className="flex items-center justify-center  min-h-screen bg-gradient-to-t from-blue-900 to-blue-950">
         <div className="container mx-auto py-12 px-4">
           <h1 className="text-5xl font-bold mb-6 text-center">JSS Security Systems LTD</h1>
 
@@ -16,7 +17,6 @@ export default function Home() {
             Based in Essex & Kent
           </p>
 
-
           <div className="flex flex-col md:flex-row justify-center items-center mb-8 gap-4">
             <a
               href="#services"
@@ -24,17 +24,12 @@ export default function Home() {
             >
               Our Services <ArrowDown width="20" />
             </a>
-
-            <a
-              href="/contact"
-              className="rounded-full justify-center border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            >
-              Get in touch today
-            </a>
           </div>
         </div>
       </div>
-      <Services />
+      <ServicesComponent />
+
+      <ContactComponent />
     </div>
   );
 }

@@ -34,14 +34,14 @@ export default function Menu({ toggleMenu }: MenuProps) {
                 alt="Logo"
                 height={50}  
             /> */}
-        </button>
+        </button> 
 
         {/* Menu Options */}
         <nav className={`md:block block`}>
             {/* <Link href="/services" className="hover:text-gray-300 h-5 mx-3">
                 Services
             </Link> */}
-            <Link href="/contact" className="hover:text-gray-300 h-5 mx-3 pr-10">
+            <Link href="#contact" className="hover:text-gray-300 h-5 mx-3 pr-10">
                 <Phone />
             </Link>
         </nav>
