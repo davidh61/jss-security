@@ -52,7 +52,7 @@ jobs:
         with:
           include-hidden-files: true
           if-no-files-found: error
-          path: ./github-pages
+          path: /jss-security/github-pages
 
   deploy:
     environment:
