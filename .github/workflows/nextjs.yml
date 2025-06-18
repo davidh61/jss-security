@@ -15,6 +15,9 @@ concurrency:
 
 jobs:
   build:
+    defaults:
+      run:
+        working-directory: jss-security
     runs-on: ubuntu-latest
 
     steps:
