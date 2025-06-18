@@ -3,6 +3,7 @@ import { Comme } from "next/font/google";
 import "./globals.css";
 import MenuWrapper from "../components/MenuWrapper";
 import { use } from "react";
+import Footer from "../components/Footer";  
 
 
 const comme = Comme({
@@ -22,12 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <body className={`${comme.variable} antialiased flex flex-col min-h-screen`}>
         <MenuWrapper />
-        
-        <body
-          className={`${comme.variable} antialiased`}
-        >
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
