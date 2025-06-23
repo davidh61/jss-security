@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../public/logo-white.png';
-import { Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 interface MenuProps {
   isMenuOpen: boolean;
@@ -19,7 +19,7 @@ export default function Menu({ toggleMenu }: MenuProps) {
               <Image
                   src={Logo}
                   alt="Logo"
-                  height={50}  
+                  height={65}  
               />
             </Link>
         </div>
@@ -42,7 +42,7 @@ export default function Menu({ toggleMenu }: MenuProps) {
                 Services
             </Link> */}
             <Link href="#contact" className="hover:text-gray-300 h-5 mx-3 pr-10">
-                <Phone />
+                <Mail size={30} />
             </Link>
         </nav>
       </div>
