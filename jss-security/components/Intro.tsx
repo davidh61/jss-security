@@ -6,7 +6,7 @@ export default function Intro() {
             {/* Background image */}
             <div
                 className="absolute inset-0 w-full h-full bg-repeat opacity-60 z-0"
-                style={{ backgroundImage: "url('/jss-security/oriental-tiles.png')" }}
+                style={{ backgroundImage: "url('/oriental-tiles.png')" }}
                 aria-hidden="true"
             />
             {/* Gradient overlay */}
