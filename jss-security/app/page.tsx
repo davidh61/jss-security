@@ -10,7 +10,7 @@ export default function Home() {
           <h1 className="text-5xl font-bold mb-6 text-center">JSS Security Systems LTD</h1>
 
           <p className="text-lg mb-8 text-center text-gray-300">
-            Installers of Fire & Security Systems for Domestic & Commercial Premisess
+            Installers of Fire & Security Systems for Domestic & Commercial Premises
           </p>
 
           <p className="text-lg mb-8 text-center text-gray-300">
